@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    animation: header 25s infinite;
+  }
+  @keyframes header {
+    0%{color: black;}
+    25%{color: red;}
+    50%{color: black;}
+    75%{color: blue;}
+    100%{color: black;}
+  }
+  
+  #sign-and-verify {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  #upload {
+    margin-bottom: 20px;
+    border: 2px dashed gray;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 200px;
+    width: 30%;
+    display: block;
+    background: radial-gradient(#242424, #ffffff);
+    background-size: 400% 400%;
+    animation: uploader 25s ease infinite;
+  }
+  @keyframes uploader {
+    0% {
+      background-position: 0% 50%;
+      color: rgb(0, 255, 0);
+    }
+    25% {
+      background-position: 100% 50%;
+      color: black;
+    }
+    50% {
+      background-position: 0% 50%;
+      color: rgb(0, 255, 0);
+    }
+    75% {
+      background-position: 50% 50%;
+      color: white;
+    }
+    100% {
+      background-position: 0% 50%;
+      color: rgb(0, 255, 0);
+    }
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all 200ms;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
+  #results {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  #download-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #download-links li {
+    margin: 10px;
+    padding: 5px 10px;
+  }
+  
+  #download-links a {
+    color: #2444b1;
+    text-decoration: none;
+    border-bottom: 1px solid #4CAF50;
+  }
+  
+  #download-links a:hover {
+    color: #0c1458;
+    border-bottom: 1px solid #3e8e41;
+  }
+  
+  .buttons:hover {
+    animation: pulse 1s ease-in-out 1;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  body {
+    background: linear-gradient(45deg, #60b3b0, #074e91);
+    background-size: 400% 400%;
+    animation: gradient 25s ease infinite;
+    min-width: 800px;
+    min-height: 1200px;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    25% {
+      background-position: 100% 50%;
+    }
+    50% {
+      background-position: 0% 50%;
+    }
+    75% {
+      background-position: 50% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
